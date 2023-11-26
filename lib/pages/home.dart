@@ -50,21 +50,47 @@ class _HomePageState extends State<HomePage> {
             ),
             Row(
               children: [
-                Container(
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                    color: AppColor.whiteColor,
-                    borderRadius: BorderRadius.circular(15),
-                    boxShadow: [
-                      BoxShadow(
-                        color: AppColor.shadowColor,
-                        spreadRadius: 2.2,
-                        blurRadius: 5,
-                        offset: Offset(-3, 1),
+                const SizedBox(
+                  width: 20,
+                ),
+                // Expanded(child: ),
+                Expanded(
+                  child: Container(
+                    height: 34,
+                    //width: 50,
+                    decoration: BoxDecoration(
+                      color: AppColor.whiteColor,
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppColor.shadowColor,
+                          spreadRadius: 2.2,
+                          blurRadius: 5,
+                          offset: Offset(-3, 1),
+                        ),
+                      ],
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: "Search",
+                        border: InputBorder.none,
+                        prefixIcon: Image.asset(
+                          AppAssets.searchIcon,
+                        ),
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
                       ),
-                    ],
+                    ),
                   ),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+                const Icon(
+                  Icons.shopping_cart_outlined,
+                  size: 42,
                 ),
               ],
             ),

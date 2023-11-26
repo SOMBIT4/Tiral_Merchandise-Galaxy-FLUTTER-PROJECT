@@ -7,7 +7,7 @@ class AppColor {
 
   static Color buttonColor = const Color(0xFF3e4a3d);
 
-  static Color whiteColor = Colors.white;
+  static Color whiteColor = const Color.fromARGB(255, 255, 255, 255);
 
   static Color shadowColor = Color.fromARGB(255, 107, 116, 107);
 }

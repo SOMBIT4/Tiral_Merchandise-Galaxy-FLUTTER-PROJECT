@@ -1,5 +1,6 @@
 class AppAssets {
   static String menuIcon = "assets/img/menu.png";
+  static String searchIcon = "assets/img/search.png";
   static String foodBurger = "assets/img/food/burger.jpg";
   static String foodPizza = "assets/img/food/pizza.jpg";
   static String foodbiriyani = "assets/img/food/biriyani.jpg";
