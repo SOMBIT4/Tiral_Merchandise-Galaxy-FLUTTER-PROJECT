@@ -102,64 +102,6 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   height: 20,
                 ),
-
-                // SizedBox(
-                //   height: 200,
-                //   child: ListView(
-                //     children: [
-                //       Padding(
-                //         padding: EdgeInsets.all(5),
-                //         child: Container(
-                //           height: 200,
-                //           color: Colors.blue,
-                //         ),
-                //       ),
-                //     ],
-                //   ),
-                // ),
-                // SizedBox(
-                //   height: 200,
-                //   child: ListView(
-                //     children: [
-                //       Padding(
-                //         padding: EdgeInsets.all(5),
-                //         child: Container(
-                //           height: 200,
-                //           color: Colors.blue,
-                //         ),
-                //       ),
-                //     ],
-                //   ),
-                // ),
-                // SizedBox(
-                //   height: 200,
-                //   child: ListView(
-                //     children: [
-                //       Padding(
-                //         padding: EdgeInsets.all(5),
-                //         child: Container(
-                //           height: 200,
-                //           color: Colors.blue,
-                //         ),
-                //       ),
-                //     ],
-                //   ),
-                // ),
-                // SizedBox(
-                //   height: 200,
-                //   child: ListView(
-                //     children: [
-                //       Padding(
-                //         padding: EdgeInsets.all(5),
-                //         child: Container(
-                //           height: 200,
-                //           color: Colors.blue,
-                //         ),
-                //       ),
-                //     ],
-                //   ),
-                // ),
-
                 Text(
                   'Product',
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
@@ -185,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 Text(
                   'Product',
@@ -211,6 +153,9 @@ class _HomePageState extends State<HomePage> {
                     },
                   ),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 Text(
                   'Product',
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
@@ -234,6 +179,9 @@ class _HomePageState extends State<HomePage> {
                       return const ProductListTile();
                     },
                   ),
+                ),
+                const SizedBox(
+                  height: 40,
                 ),
               ],
             ),
