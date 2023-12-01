@@ -1,42 +1,49 @@
 import 'package:flutter/material.dart';
 
-class Mytextfield1 extends StatelessWidget {
+class Mytextfield1 extends StatefulWidget {
   final controller;
   final String hintText;
-  final bool obscureText;
 
   const Mytextfield1({
     super.key,
     required this.controller,
     required this.hintText,
-    required this.obscureText,
-    required InputDecoration decoration,
   });
 
   @override
+  State<Mytextfield1> createState() => _Mytextfield1State();
+}
+
+class _Mytextfield1State extends State<Mytextfield1> {
+  bool _obsecuretext = true;
+  @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 25.0),
+      padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: TextField(
-        controller: controller,
-        obscureText: obscureText,
+        controller: widget.controller,
+        obscureText: _obsecuretext,
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.black),
+            borderSide: const BorderSide(color: Colors.black),
             borderRadius: BorderRadius.circular(12),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white),
+            borderSide: const BorderSide(color: Colors.white),
             borderRadius: BorderRadius.circular(12),
           ),
           suffixIcon: IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.visibility_off,
+              onPressed: () {
+                setState(() {
+                  _obsecuretext = !_obsecuretext;
+                });
+              },
+              icon: Icon(
+                _obsecuretext ? Icons.visibility_off : Icons.visibility,
               )),
           fillColor: Colors.grey.shade300,
           filled: true,
-          hintText: hintText,
+          hintText: widget.hintText,
         ),
       ),
     );
